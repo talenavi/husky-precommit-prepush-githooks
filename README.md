@@ -39,13 +39,13 @@ This script will block anybody who tries to commit to a branch that has upper ca
 
 I will try to explain from the very begining. 
 
-#### Install Husky in your repo
+#### 1. Install Husky in your repo
 
 `npm install husky --save-dev`
 
 if you cannot run `npm`, you need to install nodejs and npm in your system first. Read this https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
 
-#### Modify your package.json file
+#### 2. Modify your package.json file
 
 This file will be located in the root directory of your repository.
 
@@ -81,7 +81,7 @@ You may combine the process with `lint-staged` or `commitlint` (optional). If yo
 },
 ```
 
-#### Download commands folder from my github and paste it in the root of your repository folder
+#### 3. Download commands folder from my github and paste it in the root of your repository folder
 
 ```
 ...
@@ -93,7 +93,7 @@ package.json
 ...
 ```
 
-#### Modify the scripts and adjust it to your own rules.
+#### 4. Modify the scripts and adjust it to your own rules.
 
 These default scripts are suitable for my needs, however it may need adjustment for others, feel free to adjust and let me know if there is a better way to do.
 
