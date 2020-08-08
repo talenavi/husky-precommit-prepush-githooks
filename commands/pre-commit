@@ -1,0 +1,30 @@
+#!/bin/bash
+
+# Protect master from accidental commits.
+echo -e "===\n>> Talenavi Pre-commit Hook:: Checking branch name / Mengecek nama branch..."
+branchName=$(git branch | grep '*' | sed 's/* //')
+
+if [ $branchName == 'master' ]
+then
+  echo -e "\n🚫 Commit directly to master branch is not allowed! / Commit langsung ke branch master dilarang!\n" && exit 1
+fi
+
+if [ $branchName == 'develop' ]
+then
+  echo -e "\n🚫 Cannot push to remote develop branch, please create your own branch and use PR."
+  echo -e "🚫 Tidak bisa push ke remote branch develop, silahkan buat branch kamu sendiri dan gunakan pull request.\n" && exit 1
+fi
+
+if [[ $branchName = *[![:ascii:]]* ]]
+then
+  echo -e "\n🚫 Branch name should not have any ascii and upper case letters, please rename your branch name / Nama branch tidak boleh menggunakan huruf besar dan tidak boleh mengandung ascii.\n" && exit 1
+fi
+
+if [[ $branchName =~ [A-Z] ]]
+then
+  echo -e "\n🚫 Branch name should not have any ascii and upper case letters, please rename your branch name / Nama branch tidak boleh menggunakan huruf besar dan tidak boleh mengandung ascii.\n" && exit 1
+fi
+
+echo -e ">> Finish checking branch name / Selesai mengecek nama branch.\n==="
+
+exit 0
