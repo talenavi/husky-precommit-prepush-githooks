@@ -17,11 +17,11 @@ Note: preventing a push to a certain branch is recommended to be handled from se
 - You don't want to distribute your pre-commit and pre-push script manually to everybody in your repository.
 - You want to apply local-check before somebody push or commit to a certain branch.
 
-## What these scripts is all about?
+## What is this all about?
 
-This bash scripts are basically similar to the one that is located inside `.git/hooks/`. However we will tweak it and put it inside our repository and the scripts will be called by husky [https://github.com/typicode/husky](https://github.com/typicode/husky) (Husky can prevent bad git commit, git push and more 🐶 woof!) so it will be distributed to all members in your repository.
+These bash scripts are basically similar to the one that is located inside `.git/hooks/`. However we will tweak it and put it inside our repository and the scripts will be called by husky [https://github.com/typicode/husky](https://github.com/typicode/husky) (Husky can prevent bad git commit, git push and more 🐶 woof!) so it will be distributed to all members in your repository.
 
-This scripts will be executed everytime there is a push or a commit to your repository.
+These scripts will be executed everytime there is a push or a commit to your repository.
 
 ## What will these scripts do?
 
