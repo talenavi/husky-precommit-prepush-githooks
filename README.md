@@ -81,6 +81,11 @@ You may combine the process with `lint-staged` or `commitlint` (optional). If yo
 },
 ```
 
+Read here for full instructions of how to prepare linting to your repository:\
+(Laravel + PHP CS Fixer + Prettier + ESLint + airbnb-base + Husky + lint-staged + commitlint + pre-commit hook + pre-push hook)\
+https://gist.github.com/christchan/4459e9095dac0e21aae996dde2fb788b
+
+
 #### 3. Download commands folder from my github and paste it in the root of your repository folder
 
 ```
@@ -97,5 +102,5 @@ package.json
 
 These default scripts are suitable for my needs, however it may need adjustment for others, feel free to adjust and let me know if there is a better way to do.
 
-Enjoy!
+Enjoy!\
 www.talenavi.com
