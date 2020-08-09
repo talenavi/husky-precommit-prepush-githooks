@@ -35,7 +35,7 @@ This script will block anybody who tries to commit to a branch that has ascii ch
 
 This script will block anybody who tries to commit to a branch that has upper case character in it.
 
-## What to prepare? 
+## What to prepare and How to use? 
 
 I will try to explain from the very begining. 
 
